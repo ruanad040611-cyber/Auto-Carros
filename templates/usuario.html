@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Carros</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='imagens/favicon.png')}}" type="image/x-icon">
+</head>
+<body class="body_usuario">
+    <header>
+        <img src="{{ url_for('static', filename='imagens/carro.png') }}" alt="">        
+    </header>
+    <div>
+        <h2>Acompanhe todas as notícias da nossa companinha</h2>
+    </div>
+    <main>
+        <form method="GET">
+            <div>
+                {% for dado in dados %}
+                    <h2>{{ dado.Título }}</h2>
+                    {% if dado.Imagem %}
+                    <img src="{{ url_for('static', filename=dado.Imagem) }}" alt="#" width="500" height="300">
+                    {% endif %}
+                    {% if dado.Video %}
+                    <video width="400" height="300" controls>
+                        <source src="{{ url_for('static', filename=dado.Video) }}">
+                    </video>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div>
+          <h4>&copy; 2026 Auto Carros. Todos os direiros reservados</h4>
+          <p>Site criado por Ruan Almeida Duarte</p>
+          <h4>Redes</h4>
+          <a href="https://www.instagram.com/ruan.a.d/">Instagram</a>
+          <a href="https://github.com/ruanad040611-cyber">Github</a>
+          <a href="https://www.linkedin.com/in/ruan-almeida-4136503b7/">Linkdin</a>
+        </div>
+    </footer>
+</body>
+</html>

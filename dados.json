@@ -1,0 +1,22 @@
+[
+    {
+        "Título": "imagem de trilha de estudos",
+        "Imagem": "Image/Python básico.png",
+        "Texto": "é um mapa de trilhas de estudos"
+    },
+    {
+        "Título": "musica",
+        "Video": "Vid/ACDC - Highway to Hell.mp3",
+        "Texto": "ac/dc é legal"
+    },
+    {
+        "Título": "Carro Novo, Oferta com tempo LIMITADO",
+        "Imagem": "Image/negativo_m.png",
+        "Texto": "carro zero km com cor alaranjada"
+    },
+    {
+        "Título": "Carro Novo, Oferta com tempo LIMITADO",
+        "Video": "Vid/podman.mp4",
+        "Texto": "carro zero km com cor alaranjada"
+    }
+]

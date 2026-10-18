@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Carros Cadastro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='imagens/favicon.png')}}" type="image/x-icon">
+</head>
+<body class="body_login_cadastro">
+    <div>
+        <h3>Esse site é um blog da empressa Auto Carros</h3>
+        <p>Um Blog Onde tem nóticias, ofertas e vagas de emprego da empressa</p>
+    </div>
+    <form method="POST" class="form_login_cadastro">
+        <h3>Email:</h3>
+        <input type="email" name="email">
+        <h3>Senha:</h3>
+        <input type="password" name="senha">
+        <button type="submit">enviar</button>
+        {% if p %}
+            <p>{{p}}</p>
+        {% endif %}
+    </form>
+</body>
+</html>

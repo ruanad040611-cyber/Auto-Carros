@@ -1,0 +1,375 @@
+body {
+    font-family: monospace;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Login & Cadastro */
+
+.body_login_cadastro {
+    display: flex;
+    background-color: whitesmoke;
+    overflow: hidden;
+    font-size: 2vw;
+}
+.form_login_cadastro {
+    display: flex;
+    background-image: linear-gradient(to bottom, #378C8C, #1E5959);
+    padding: 15%;
+    flex-direction: column;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+}
+.body_login_cadastro div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 45vw;
+    justify-content: center;
+}
+.form_login_cadastro input {
+    height: 2vw;
+    font-size: 1.5vw;
+    width: 20vw;
+}
+.form_login_cadastro button {
+    width: 5vw;
+    height: 2vw;
+}
+.form_login_cadastro a {
+    cursor: pointer;
+    text-decoration: none;
+    color: aqua;
+}
+.form_login_cadastro a:focus {
+    color: darkturquoise;
+}
+
+/* Adm */
+
+.body_adm {
+    background-image: linear-gradient(to bottom, whitesmoke, rgb(231, 231, 231));
+}
+.body_adm header {
+    background-color: #0B0B0B;
+    text-align: center;
+    color: aliceblue;
+    padding-bottom: 20px;
+}
+.body_adm img {
+    height: 20vw;
+}
+.body_adm main > div {
+    text-align: center;
+    padding: 10%;
+    font-size: 3vw;
+    border: 20px solid #222222;
+    border-radius: 5px;
+}
+.body_adm form > h3 {
+    text-align: center;
+    font-size: 2vw;
+    padding: 1%;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.body_adm form {
+    display: flex;
+    font-size: 2vw;
+    padding: 5px;
+    flex-direction: column;
+}
+.body_adm form > input {
+    height: 2vw;
+    font-size: 1.5vw;
+    margin: 15px;
+    width: 20%;
+}
+.body_adm form > button {
+    cursor: pointer;
+    padding: 10px;
+    width: 10%;
+}
+.body_adm form > .file {
+    cursor: pointer;
+}
+
+/* Usuario */
+
+.body_usuario {
+    background-image: linear-gradient(to left, #1E3340, #294658);
+}
+.body_usuario header {
+    background-color: #0B0B0B;
+    text-align: center;
+    padding: 2%;
+}
+.body_usuario header > img {
+    height: 25vw;
+}
+.body_usuario div {
+    background-color: whitesmoke;  
+    padding: 2%;
+    text-align: center;
+}
+.body_usuario div > a {
+    text-decoration: none;
+    color: #1E3340;
+}
+.body_usuario div > img {
+    width: 100%;
+}
+.body_usuario div > source {
+    width: 100%;
+}
+.body_usuario div > a:focus {
+    color: rgb(143, 5, 229);  
+}
+.body_usuario form {
+    display: block;
+    justify-self: center;
+    text-align: center;
+    padding: 1%;
+    width: 30%;
+    background-image: linear-gradient(to bottom,#A69FA0, #b5acad);
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+.body_usuario form > div {
+    background-image: linear-gradient(to bottom, whitesmoke, rgb(244, 243, 243));
+}
+
+/* Medidas */
+@media (max-width: 1024px) {
+    /* Usuario */
+    .body_usuario header > img {
+        height: 30vw;
+    }
+    .body_usuario form {
+        padding: 2%;
+        width: 50%;
+        margin-top: 3%;
+        margin-bottom: 10%;
+    }
+
+    /* Login & Cadastro */
+    .body_login_cadastro {
+        font-size: 3vw;
+    }
+    .form_login_cadastro {
+        padding: 10%;
+    }
+    .form_login_cadastro input {
+        height: 4vw;
+        font-size: 2.5vw;
+        width: 30vw;
+    }
+    .form_login_cadastro button {
+        width: 10vw;
+        height: 4vw;
+        font-size: 2vw;
+    }
+
+    /* Adm */
+    .body_adm main > div {
+        font-size: 3.5vw;
+    }
+    .body_adm form,
+    .body_adm form > h3 {
+        font-size: 3vw;
+    }
+    .body_adm form > input {
+        height: 4vw;
+        font-size: 2.5vw;
+        width: 40%;
+    }
+    .body_adm form > button {
+        width: 20%;
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Usuario */
+    .body_usuario {
+        font-size: 2.8vw;
+    }
+    .body_usuario header {
+        padding: 3%;
+    }
+    .body_usuario header > img {
+        height: 35vw;
+    }
+    .body_usuario div {
+        padding: 3%;
+    }
+    .body_usuario div > img,
+    .body_usuario div > video {
+        max-width: 100%;
+        height: auto;
+    }
+    .body_usuario form {
+        padding: 3%;
+        width: 80%;
+        margin-top: 4%;
+        margin-bottom: 10%;
+    }
+     /* Login & Cadastro */
+    .body_login_cadastro {
+        flex-direction: column;
+        overflow: auto;
+        font-size: 4vw;
+    }
+    .body_login_cadastro div {
+        margin-bottom: 10vw;
+        padding: 4vw;
+    }
+    .form_login_cadastro {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 7%;
+        box-sizing: border-box;
+    }
+    .form_login_cadastro input {
+        height: 8vw;
+        font-size: 5vw;
+        width: 90%;
+    }
+    .form_login_cadastro button {
+        width: 25vw;
+        height: 7vw;
+        font-size: 3vw;
+    }
+
+    /* Adm */
+    .body_adm img {
+        height: 30vw;
+    }
+    .body_adm main > div {
+        font-size: 4vw;
+        border-width: 12px;
+    }
+    .body_adm form,
+    .body_adm form > h3 {
+        font-size: 4vw;
+    }
+    .body_adm form > input {
+        height: 6vw;
+        font-size: 3.5vw;
+        width: 70%;
+    }
+    .body_adm form > button {
+        width: 35%;
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 425px) {
+    /* Usuario */
+    .body_usuario {
+        font-size: 4vw;
+        overflow-x: hidden;
+    }
+    .body_usuario header > img {
+        height: 45vw;
+        max-width: 100%;
+    }
+    .body_usuario div {
+        padding: 4%;
+        box-sizing: border-box;
+    }
+    .body_usuario form {
+        padding: 4%;
+        width: 95%;
+        box-sizing: border-box;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    /* Login & Cadastro */
+    .body_login_cadastro {
+        flex-direction: column;
+        overflow: auto;
+        font-size: 5vw;
+    }
+    .body_login_cadastro div {
+        margin-bottom: 10vw;
+        padding: 5vw;
+    }
+    .form_login_cadastro {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 8%;
+        box-sizing: border-box;
+    }
+    .form_login_cadastro input {
+        height: 10vw;
+        font-size: 5vw;
+        width: 100%;
+    }
+    .form_login_cadastro button {
+        width: 30vw;
+        height: 10vw;
+        font-size: 4.5vw;
+    }
+
+    /* Adm */
+    .body_adm img {
+        height: 40vw;
+    }
+    .body_adm main > div {
+        font-size: 5.5vw;
+        padding: 6%;
+        border-width: 8px;
+    }
+    .body_adm form,
+    .body_adm form > h3 {
+        font-size: 5vw;
+    }
+    .body_adm form > input {
+        height: 10vw;
+        font-size: 5vw;
+        width: 90%;
+        margin: 10px 0;
+    }
+    .body_adm form > button {
+        width: 50%;
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width: 375px) {
+    /* Usuario */
+    .body_usuario form {
+        width: 100%;
+        padding: 3%;
+    }
+}
+
+@media (max-width: 320px) {
+    /* Usuario */
+    .body_usuario header > img {
+        height: 50vw;
+    }
+    .body_usuario form {
+        width: 100%;
+        margin-top: 8%;
+        margin-bottom: 20vw;
+    }
+
+    /* Login & Cadastro */
+    .form_login_cadastro {
+        padding: 6%;
+    }
+
+    /* Adm */
+    .body_adm form > button {
+        width: 70%;
+    }
+}
